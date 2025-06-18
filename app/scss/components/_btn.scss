@@ -10,29 +10,29 @@
   background-color: #1E1E1E;
   color: $accent;
   justify-content: center;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 17px 29px;
   letter-spacing: -0.24px;
   transition: background-color .4s, border .4s, color .4s, transform .6s;
 
   &:hover {
-    background-color: #2C2C3C;
+    background-color: #282836;
     border-color: transparent;
     color: #f2f2f5;
   }
 
   &:focus {
     background-color: transparent;
-    color: #D02138;
-    border-color: #D02138;
+    color: $black;
+    border-color: $black;
 
-    &::before, &::after {
-      opacity: 0;
+    svg path {
+      fill: $black;
     }
   }
 
   &:active {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
   }
 }

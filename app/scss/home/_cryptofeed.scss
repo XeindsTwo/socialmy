@@ -15,23 +15,31 @@
   &__card {
     background-color: #1E1E1E;
     border-radius: 8px;
+    position: relative;
     padding: 12px 6px 24px;
+    overflow: hidden;
   }
 
   &__img {
+    @include objectCoverBg;
     margin: 0 auto;
   }
 
   &__name {
+    position: relative;
+    z-index: 15;
     font-family: $spaceGrotesk;
     font-size: 30px;
     font-weight: 700;
     line-height: 1.15;
+    margin-top: -55px;
     margin-bottom: 14px;
     padding: 0 20px;
   }
 
   &__text {
+    position: relative;
+    z-index: 15;
     color: #E4E6E8;
     letter-spacing: 0.22px;
     font-size: 22px;

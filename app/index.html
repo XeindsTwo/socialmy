@@ -13,22 +13,15 @@
 
 <body class="body">
 <main>
-  <section class="home indent" id="home">
+  <section class="home" id="home">
   <div class="home__inner">
     <div class="home__content">
       <div class="home__logo">
         <img src="images/logo.svg" alt="logo MyBNBSocail" width="291" height="58">
+        <span class="home__line"></span>
         <a class="home__twitter" href="" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <mask id="mask0_94_305" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="28"
-                  height="28">
-              <path d="M0 0H28V28H0V0Z" fill="white"/>
-            </mask>
-            <g mask="url(#mask0_94_305)">
-              <path
-                  d="M22.05 1.31201H26.344L16.964 12.06L28 26.688H19.36L12.588 17.818L4.848 26.688H0.55L10.582 15.188L0 1.31401H8.86L14.972 9.42001L22.05 1.31201ZM20.54 24.112H22.92L7.56 3.75401H5.008L20.54 24.112Z"
-                  fill="#1E1E1E"/>
-            </g>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
+            <path d="M22.05 0.312042H26.344L16.964 11.06L28 25.688H19.36L12.588 16.818L4.848 25.688H0.55L10.582 14.188L0 0.314042H8.86L14.972 8.42004L22.05 0.312042ZM20.54 23.112H22.92L7.56 2.75404H5.008L20.54 23.112Z" fill="#1E1E1E"/>
           </svg>
         </a>
       </div>
@@ -49,7 +42,7 @@
         Get Early Access
       </a>
     </div>
-    <img src="images/home.png" alt="">
+    <img class="home__img" src="images/home.png" height="610" width="666" alt="">
   </div>
 </section>
   <section class="cryptofeed indent">
@@ -97,6 +90,167 @@
       <p class="community__text">Shaped by memes, builders, and the BNB ecosystem</p>
     </div>
     <img class="community__img" src="images/community.png" alt="">
+  </div>
+</section>
+  <section class="meme indent">
+  <div class="meme__inner">
+    <div class="meme__content">
+      <h2 class="meme__title title-section">Post memes. Drop alpha. Own your @handle</h2>
+      <p class="meme__text">
+        Your memes, ideas, and voice deserve a place on-chain — not in someone else's algorithm.
+      </p>
+      <a class="btn meme__link" href="" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+          <path
+              d="M2.1665 11.9167V5.41667H8.6665V11.9167H2.1665ZM6.49984 9.75001V7.58334H4.33317V9.75001H6.49984ZM23.8332 5.41667H10.8332V7.58334H23.8332V5.41667ZM23.8332 9.75001H10.8332V11.9167H23.8332V9.75001ZM10.8332 14.0833H23.8332V16.25H10.8332V14.0833ZM23.8332 18.4167H10.8332V20.5833H23.8332V18.4167ZM2.1665 14.0833V20.5833H8.6665V14.0833H2.1665ZM6.49984 16.25V18.4167H4.33317V16.25H6.49984Z"
+              fill="#F2C828"/>
+        </svg>
+        Get Early Access
+      </a>
+    </div>
+    <img class="meme__img" src="images/meme.png" alt="">
+  </div>
+</section>
+  <section class="faq indent" id="faq">
+  <div class="container">
+    <h2 class="faq__title title-section">Frequently asked. Memetically answered.</h2>
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">What is MyBNBSocial?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            MyBNBSocial is a Web3-native social platform built on the BNB Chain. <br>
+            It’s a place where traders, meme creators, and crypto communities connect through posts, memes, and alpha —
+            all on-chain and without the noise of traditional social media.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">Is it like X (Twitter)?</p>
+          <button class="faq__btn active" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body faq__body--active">
+          <p class="faq__text">
+            Not quite. There are no ads, no shadowbans, and no algorithm deciding what you see. <br>
+            It’s a decentralized, user-first experience focused on relevance, not reach.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">Who’s it for?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            For anyone living the Web3 lifestyle: <br>
+            Degens, NFT collectors, alpha hunters, memers, builders, and communities looking for a space that
+            understands crypto culture natively.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">How do I join the beta?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            Hit the “Get Early Access” button, fill out the form, and we’ll notify selected users with private access.
+            <br>
+            Early testers will get to help shape features — and secure early perks.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">Is it free to use?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            100% free during beta. <br>
+            Later on, premium features like token rewards or NFT-based identities may be added,
+            but the core feed will remain free for everyone.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">Can I post memes or just alpha?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            Both are welcome — and both are needed. <br>
+            Some users post market breakdowns, some drop daily memes. The culture is shaped by you.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name"> Will I keep my @handle after beta?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            Yes. Handles are reserved during beta. <br>
+            If you claim @yourname early, it’s yours when the full version goes live. First come, first minted.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">Will there be token/NFT rewards?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            We’re planning integrations with airdrops, community contests, and limited-edition NFTs for top contributors
+            and early buzzers. Beta users will get access to exclusive perks first.
+          </p>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__head" data-faq-btn>
+          <p class="faq__name">When is the full launch?</p>
+          <button class="faq__btn" type="button">
+            <span class="sr-only">Open item</span>
+          </button>
+        </div>
+        <div class="faq__body">
+          <p class="faq__text">
+            We’re testing with a tight group of early users right now. <br>
+            Public access will roll out in phases — beta users will be first in line when it happens.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <p class="faq__info">
+      Buzz us at
+      <a href="mailto:support@mybnb.social">support@mybnb.social</a>
+      if something’s still unclear.
+    </p>
   </div>
 </section>
 </main>

@@ -1,0 +1,40 @@
+.meme {
+  @include bg;
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../images/home-bg.svg");
+
+  &__inner {
+    @include flex-between-center-gap(30);
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    max-width: 580px;
+    color: #1E1E1E;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    font-size: 24px;
+    max-width: 530px;
+    margin-bottom: 60px;
+  }
+
+  &__link {
+    margin-top: auto;
+  }
+
+  &__img {
+    @include objectCoverBg;
+    margin-bottom: -150px;
+    margin-left: auto;
+  }
+}

@@ -84,18 +84,6 @@
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: rgba($accent, .3);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: $accent;
-}
-
 ::selection {
   background-color: $accent;
   color: #1E1E1E;

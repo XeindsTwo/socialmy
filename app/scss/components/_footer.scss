@@ -1,0 +1,21 @@
+.footer {
+  padding-bottom: 35px;
+
+  &__inner {
+    @include flex-between-center-gap(30);
+  }
+
+  &__logo {
+    @include flex-align-center(18);
+  }
+
+  &__line {
+    height: 32px;
+    width: 1px;
+    background-color: rgba($white, .4);
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}

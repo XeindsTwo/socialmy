@@ -22,13 +22,13 @@
 }
 
 .body {
-  font-family: $foundersGrotesk;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.24;
-  letter-spacing: -0.18px;
-  color: #2C2C3C;
-  background-color: #F1F1F5;
+  font-family: $ttInterfacesMed;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: #E4E6E8;
+  background-color: #282829;
   position: relative;
   overflow-x: hidden;
 
@@ -61,26 +61,14 @@
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1300px;
   padding: 0 15px;
   margin: 0 auto;
   width: 100%;
 }
 
 .indent {
-  margin-bottom: 150px;
-  @media (max-width: 1100px) {
-    margin-bottom: 120px;
-  }
-  @include r($lg) {
-    margin-bottom: 110px;
-  }
-  @include r($tablet) {
-    margin-bottom: 95px;
-  }
-  @include r($sm) {
-    margin-bottom: 80px;
-  }
+  margin-bottom: 80px;
 }
 
 .sr-only {
@@ -101,14 +89,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(#86202c, .3);
+  background-color: rgba($accent, .3);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #86202c;
+  background-color: $accent;
 }
 
 ::selection {
-  background-color: #86202c;
-  color: #f2f2f5;
+  background-color: $accent;
+  color: #1E1E1E;
 }

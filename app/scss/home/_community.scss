@@ -1,0 +1,24 @@
+.community {
+  background-color: #1E1E1E;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  position: relative;
+  min-height: 530px;
+  overflow: hidden;
+
+  &__content {
+    @include flex-column(14);
+    max-width: 490px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 15;
+    text-align: center;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}

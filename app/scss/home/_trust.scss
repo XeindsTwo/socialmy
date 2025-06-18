@@ -1,0 +1,65 @@
+.trust {
+  margin-top: 80px;
+
+  &__content {
+    max-width: 425px;
+    width: 100%;
+    margin: 80px auto 0;
+    @include r($tablet) {
+      max-width: 400px;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    color: #4D4D5A;
+    margin-bottom: 34px;
+    @include r($lg) {
+      font-size: 36px;
+      margin-bottom: 28px;
+    }
+    @include r($tablet) {
+      font-size: 34px;
+    }
+    @include r($sm) {
+      font-size: 32px;
+    }
+    @include r($phone) {
+      font-size: 30px;
+      max-width: 330px;
+      line-height: 1.1;
+    }
+    @media (max-width: 375px) {
+      font-size: 29px;
+    }
+  }
+
+  &__list {
+    @include flex-column(18);
+  }
+
+  &__item {
+    padding-top: 16px;
+    border-top: 1px solid rgba(#000, .15);
+  }
+
+  &__name {
+    font-family: $jetBrainsMono;
+    color: #4D4D5A;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.18px;
+    text-transform: uppercase;
+  }
+
+  &__inner {
+    @include flex-center;
+    min-height: 80px;
+    @include r($phone) {
+      min-height: 70px;
+    }
+  }
+}

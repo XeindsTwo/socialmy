@@ -1,0 +1,35 @@
+.tariffs {
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 425px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    @include r($lg) {
+      margin-bottom: 26px;
+    }
+    @include r($tablet) {
+      max-width: 370px;
+    }
+    @include r($phone) {
+      max-width: 340px;
+    }
+  }
+
+  &__text {
+    max-width: 405px;
+    margin-bottom: 64px;
+    @include r($lg) {
+      margin-bottom: 46px;
+    }
+  }
+
+  &__list {
+    @include flex-column(10);
+    @include r($phone) {
+      gap: 18px;
+      margin: 0 -5px;
+    }
+  }
+}

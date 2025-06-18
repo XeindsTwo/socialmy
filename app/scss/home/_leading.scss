@@ -1,0 +1,115 @@
+.leading {
+  &__title {
+    margin-bottom: 56px;
+    @include r($tablet) {
+      font-size: 62px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 660px) {
+      font-size: 58px;
+    }
+    @include r($sm) {
+      font-size: 56px;
+    }
+    @media (max-width: 520px) {
+      font-size: 52px;
+    }
+    @include r($phone) {
+      font-size: 50px;
+    }
+    @media (max-width: 430px) {
+      font-size: 48px;
+    }
+    @media (max-width: 415px) {
+      font-size: 46px;
+    }
+    @media (max-width: 400px) {
+      font-size: 44px;
+    }
+    @media (max-width: 380px) {
+      font-size: 42px;
+    }
+  }
+
+  &__swiper {
+    margin-bottom: 56px;
+    @include r($lg) {
+      margin-bottom: 46px;
+    }
+    @include r($phone) {
+      margin-bottom: 36px;
+    }
+
+    &-scrollbar {
+      display: none;
+      @media (max-width: 860px) {
+        display: flex;
+        height: 7px;
+        overflow: hidden;
+        border-radius: 30px;
+        background-color: rgba(#691923, .8);
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__card {
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #FBFBFB;
+    box-shadow: 0 2px 2px 0 rgba(196, 196, 206, 0.16);
+  }
+
+  &__quotes {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    @include r($tablet) {
+      font-size: 19px;
+    }
+    @include r($phone) {
+      font-size: 18px;
+    }
+  }
+
+  &__author {
+    @include flex-align-center(10);
+    @include r($phone) {
+      font-size: 17px;
+    }
+
+    img {
+      @include objectCoverBg;
+      border-radius: 50%;
+    }
+  }
+
+  &__btn {
+    @media (max-width: 390px) {
+      font-size: 13px;
+    }
+  }
+
+  .swiper {
+    overflow: visible;
+    cursor: grab;
+  }
+
+  .swiper-slide {
+    max-width: 266px;
+    width: 100%;
+    @include r($lg) {
+      max-width: 245px;
+    }
+  }
+
+  .swiper-scrollbar-drag {
+    @media (max-width: 860px) {
+      background-color: #f82b45;
+    }
+  }
+}

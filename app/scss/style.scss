@@ -1,0 +1,39 @@
+@import 'vendor/reset';
+@import 'vendor/fonts';
+@import 'vendor/vars';
+@import 'vendor/mixin';
+@import 'vendor/global';
+@import 'vendor/libs';
+
+@import "components/menu-btn";
+@import "components/btn";
+@import "components/footer";
+@import "components/header";
+@import "components/top";
+@import "components/title-section";
+@import "components/form-elements";
+@import "components/modal";
+@import "components/influencer-card";
+@import "components/tariff-card";
+
+@import "home/home";
+@import "home/access";
+@import "home/trust";
+@import "home/leading";
+
+@import "pages/agreement";
+@import "pages/pricing";
+@import "pages/cases";
+@import "pages/admin";
+@import "pages/auth";
+@import "pages/create-influencers";
+@import "pages/categories-list";
+@import "pages/cases-article";
+@import "pages/influencers";
+@import "pages/about/about-start";
+@import "pages/about/about-numbers";
+@import "pages/verification";
+
+@import "components/sections/features";
+@import "components/sections/guarantees";
+@import "components/sections/tariffs";

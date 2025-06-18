@@ -105,18 +105,20 @@
     }
     @media (max-width: 860px) {
       border-radius: 10px;
+      margin-bottom: -210px;
     }
     @media (max-width: 590px) {
       margin: 0 -5px -150px;
     }
     @media (max-width: 530px) {
-      height: 490px;
+      height: 620px;
       border-radius: 0;
+      margin-bottom: -210px;
       object-position: left;
     }
     @include r($phone) {
-      height: 580px;
-      margin-bottom: -214px;
+      height: 680px;
+      margin-bottom: -270px;
     }
   }
 

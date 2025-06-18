@@ -1,12 +1,64 @@
 .footer {
   padding-bottom: 35px;
+  @include r($desktop) {
+    padding-bottom: 25px;
+  }
+  @media (max-width: 960px) {
+    padding-bottom: 20px;
+  }
 
   &__inner {
     @include flex-between-center-gap(30);
+    @include r($tablet) {
+      flex-direction: column;
+    }
   }
 
   &__logo {
     @include flex-align-center(18);
+
+    img {
+      @include r($desktop) {
+        width: auto;
+        height: 42px;
+      }
+      @include r($lg) {
+        height: 38px;
+      }
+      @include r($phone) {
+        height: 36px;
+      }
+    }
+  }
+
+  &__twitter {
+    @include flex-center;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    margin-left: -3px;
+    transition: background-color .4s, border .4s;
+    @include r($lg) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &:hover {
+      svg path {
+        fill: #4196ff;
+      }
+    }
+
+    &:focus {
+      background-color: #2286ff;
+
+      svg path {
+        fill: $white;
+      }
+    }
   }
 
   &__line {
@@ -17,5 +69,11 @@
 
   &__text {
     font-size: 18px;
+    @media (max-width: 960px) {
+      font-size: 16px;
+    }
+    @media (max-width: 390px) {
+      font-size: 15px;
+    }
   }
 }

@@ -15,6 +15,28 @@
   padding: 17px 29px;
   letter-spacing: -0.24px;
   transition: background-color .4s, border .4s, color .4s, transform .6s;
+  @media (max-width: 1300px) {
+    font-size: 22px;
+    svg {
+      width: 23px;
+      height: auto;
+    }
+  }
+  @include r($desktop) {
+    font-size: 20px;
+  }
+  @include r($tablet) {
+    font-size: 18px;
+    svg {
+      width: 21px;
+    }
+  }
+  @media (max-width: 530px) {
+    padding: 16px 24px;
+  }
+  @include r($phone) {
+    font-size: 17px;
+  }
 
   &:hover {
     background-color: #282836;

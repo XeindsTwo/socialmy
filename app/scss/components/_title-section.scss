@@ -5,6 +5,24 @@
   line-height: 1.15;
   font-size: 44px;
   letter-spacing: -0.44px;
+  @include r($desktop) {
+    font-size: 40px;
+  }
+  @include r($lg) {
+    font-size: 38px;
+  }
+  @media (max-width: 860px) {
+    font-size: 36px;
+  }
+  @include r($tablet) {
+    font-size: 34px;
+  }
+  @media (max-width: 530px) {
+    font-size: 32px;
+  }
+  @include r($phone) {
+    font-size: 30px;
+  }
 
   img {
     @include objectCoverBg;

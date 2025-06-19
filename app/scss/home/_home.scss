@@ -4,7 +4,7 @@
   overflow: hidden;
   margin: 16px 16px 90px;
   padding: 30px 0;
-  background-image: url("../images/home-bg.svg");
+  background-image: url("../images/home-bg.webp");
 
   &__inner {
     @include flex-between-center-gap(30);
